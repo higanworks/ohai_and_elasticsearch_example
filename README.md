@@ -1,4 +1,4 @@
-# Ohai to ElasticSearch Example
+# Ohai to Elasticsearch Example
 
 When put ohai stdout to elasticsearch, you can search all attributes with kibana.
 
@@ -83,7 +83,7 @@ Open `http://localhost:8000` to access kibana.
 ![kibana03](./_images/kibana_04.png)
 
 
-#### Stop ElasticSearch
+#### Stop Elasticsearch
 
 `rake down`
 
