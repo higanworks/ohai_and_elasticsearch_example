@@ -7,7 +7,7 @@ require 'excon'
 
 ES_URL       = 'https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.1.1.tar.gz'
 ES_IMAGE     = File.basename(ES_URL)
-KIBANA_URL   = 'https://download.elasticsearch.org/kibana/kibana/kibana-3.0.1.tar.gz'
+KIBANA_URL   = 'https://download.elasticsearch.org/kibana/kibana/kibana-3.1.0.tar.gz'
 KIBANA_IMAGE = File.basename(KIBANA_URL)
 
 desc "Print Usage"
