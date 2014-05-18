@@ -42,7 +42,7 @@ namespace :prepare do
   desc 'setup elasticsearch'
   task :es do
     unless File.exists?('elasticsearch')
-      system("wget #{ES_URL}")
+      system("wget #{ES_URL}") unless File.exists?(ES_IMAGE)
       system("tar xvzf #{ES_IMAGE}")
       FileUtils.move File.basename(ES_IMAGE, '.tar.gz'), 'elasticsearch'
     end
@@ -51,7 +51,7 @@ namespace :prepare do
   desc 'setup kibana'
   task :kibana do
     unless File.exists?('kibana')
-      system("wget #{KIBANA_URL}")
+      system("wget #{KIBANA_URL}") unless File.exists?(KIBANA_IMAGE)
       system("tar xvzf #{KIBANA_IMAGE}")
       FileUtils.move File.basename(KIBANA_IMAGE, '.tar.gz'), 'kibana'
     end
